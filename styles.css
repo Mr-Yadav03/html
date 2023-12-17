@@ -1,0 +1,53 @@
+body{
+    background-color: powderblue;
+}
+h1{
+    color:blue;
+    font-family: verdana;
+    margin: 5px;
+}
+p{
+    color:black;
+    font-style: italic;
+    font-family: courier;
+    border: 2px solid orange;
+    padding: 10px;
+    margin: 5px;
+    /* margin gives spaces from corner depending upon values and padding sets the box size */
+}
+p:hover{
+    color: rgb(14, 120, 186);
+}
+/* <style>
+a:link{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: violet;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+} */
+a:link, a:visited{
+    background-color: #f44336;
+    color: white;
+    padding: 10px 15px; /* padding size */
+    text-align: center; /* sets the ext in center*/
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active{
+    background-color: red;
+}
+</style>
