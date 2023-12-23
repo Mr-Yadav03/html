@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        th,td{
+            text-align: center;
+            /* setting the alignment of the text */
+            /* padding: 15px; */
+            border: dashed;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 40px;
+            border-spacing: 10px;
+        }
+        /* tr:nth-child(even),th:nth-child(odd){
+            background-color: #d6eeee;
+        } */
+        tr:nth-child(even){
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+        th:nth-child(even),td:nth-child(even){
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+        tr{
+            border-bottom: 1px solid #ddd;
+        }
+        tr:hover{
+            background-color: red;
+        }
+    </style>
+    <table style="width:50%">
+        <colgroup>
+        <!-- <col span="2" style="background-color: #23aa25;"> -->
+        <col span="1" style="visibility: collapse;">
+        <col span="3" style="background-color: #23aa25;">
+        </colgroup>
+        <caption>This is test Table</caption>
+        <!-- This gives the title of the table -->
+        <!-- Sets the size of the table -->
+        <tr>
+          <!-- <th style="width: 30%;">Firstname</th> -->
+          <th  colspan="2">First Name</th>
+        <!-- Sets the table header value -->
+        <!-- It span the cell to two columns -->
+          <!-- <th rowspan="2">Lastname</th> -->
+          <th>Lastname</th>
+          <!-- It span the row to multiple rows -->
+          <th>Age</th>
+        </tr>
+        <tr style="height: 50px;">
+        <!-- Sets the size of the cell -->
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+          <td>800</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+          <td>400</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+            <td>400</td>
+        </tr>
+      </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+    <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.w3schools.com/html/computer.htm">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.w3schools.com/html/phone.htm">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.w3schools.com/html/coffee.htm">
+    </map> -->
+<!-- The idea behind an image map is that you should be able to perform different actions depending on where in the image you click.
+    To create an image map you need an image, and some HTML code that describes the clickable areas. -->
+    <!-- The usemap value starts with a hash tag # followed by the name of the image map, 
+    and is used to create a relationship between the image and the image map. 
+The <map> element is used to create an image map, and is linked to the image by using the required name attribute.
+    The name attribute must have the same value as the <img>'s usemap attribute . 
+A clickable area is defined using an <area> element.
+
+You must define the shape of the clickable area, and you can choose one of these values:
+rect - defines a rectangular region
+circle - defines a circular region
+poly - defines a polygonal region
+default - defines the entire region
+More on https://www.w3schools.com/html/html_images_imagemap.asp -->
+
+<!-- Let's try on new image for mapping -->
+    <!-- <img src="Three.jpg" alt="Three" usemap="#threemap"> -->
+    <!-- <map name="threemap"> -->
+        <!-- <area shape="rect" coords="175,0,390,200" alt="Bluish Green one" href="https://www.w3schools.com/html/html_images_imagemap.asp"> -->
+        <!-- <area shape="rect" coords="5,300,220,510" alt="Green" href="https://fiddle.sencha.com"> -->
+        <!-- <area shape="rect" coords="450,415,560,510" alt="Blue" href="https://google.com"> -->
+        <!-- <area shape="circle" coords="458,403,95" alt="Circle Blue" href="https://google.com"> -->
+        <!-- <area shape="circle" coords="277,97,95" alt="Circle" href="https://google.com">  -->
+        <!-- For now it is not working properly -->
+    <!-- </map> -->
+    <img src="frenchfood.jpg" alt="foods" usemap="#food">
+    <map name="food">
+        <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Food" href="https://google.com">
+    </map>
+<!-- Poly isn't working not sure what happened :( ) -->
+    <!-- <script>
+        function myFunction() {
+          alert("You clicked the coffee cup!");
+        }
+    </script> -->
+
+</body>
+</html>
