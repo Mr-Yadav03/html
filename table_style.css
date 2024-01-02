@@ -1,8 +1,7 @@
-table, th, td {
-    border: 1px solid red;
-    border-collapse: collapse;
-    border-radius: 10px;
-}
-th,td{
-      background-color: #96d4d4;
+body{background-color: powderblue;}
+h1{color: darkgreen;}
+p{color:blue}
+div{
+    color: orange;
+    background-color: black;
 }

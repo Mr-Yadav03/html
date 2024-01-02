@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* div{
+            width: 300px;
+            margin:auto;
+            background-color: blanchedalmond;
+            color: black;
+            padding: 10px;
+            font-style: oblique;
+        } */
+        /* The CSS float property was not originally meant to align <div>
+         elements side-by-side, but has been used for this purpose for many years.
+        The CSS float property is used for positioning and formatting content and allow 
+        elements float next to each other instead of on top of each other. */
+        .mycontainer{
+            width: 100%;
+            overflow: auto;
+            background-color: aqua;
+            font-style: italic;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 10% 40% 50%;
+        }
+    </style>
+    Lorem ipsum <div>This is a DIV</div>dolor sit amet consectetur adipisicing elit. 
+    Quibusdam, sequi ipsam? Ullam labore dolorum, quisquam obcaecati eum optio hic ipsam ipsum a eos, 
+    dolore eius nisi in libero necessitatibus nam.
+    <!-- <div style="background-color: blanchedalmond; color: black; padding: 10px; font-style: italic;"> -->
+    <div style="background-color: blanchedalmond;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+    <!-- <div style="background-color: rosybrown;"> -->
+        <div class="grid-container">
+        <h2>Oslo</h2>
+        <p>Rome is the capital of Italy.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+    <!-- <div style="background-color: lightblue;"> -->
+        <div class="mycontainer">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+    </div>
+</body>
+</html>
