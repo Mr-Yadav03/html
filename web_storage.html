@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+    <script>
+    var w;
+    function startWorker(){
+        if (typeof(Worker) !== "undefined"){
+            if (typeof(w) == "undefined"){
+                w = new Worker("demo_workers.js");
+            }
+            w.onmessage = function(event){
+                document.getElementById("result").innerHTML = event.data;
+            };
+        } else{
+            document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+        }
+    }
+    function stopWorker(){
+        w.terminate();
+        w = undefined;
+    }
+    </script>
+</head>
+<body>
+    <!-- Storage API -->
+
+    <!-- if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+} else {
+  // Sorry! No Web Storage support..
+} -->
+<!-- <a href="https://www.w3schools.com/html/html5_webstorage.asp">Web Storage</a><br><br> -->
+<a href="https://www.w3schools.com/html/html5_webworkers.asp">Web Worker API</a>
+
+
+<!-- Web Worker API -->
+<!-- if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+} else {
+  // Sorry! No Web Storage support..
+} -->
+
+</body>
+</html>
